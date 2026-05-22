@@ -202,3 +202,118 @@
    color: var(--neon-green);
    filter: drop-shadow(0 0 5px var(--neon-green));
  }
+
+ @keyframes gradientShift {
+   0% {
+      background-position: 0% 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 50%;
+   }
+ }
+
+ @keyframes glow {
+   0%{
+      box-shadow: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-purple), 0 0 60px var(--neon-pink);
+   }
+   100% {
+      box-shadow: 0 0 30px var(--neon-pink), 0 0 60px var(--neon-purple), 0 0 90px var(--neon-blue);
+   }
+ }
+
+ @keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+ }
+
+ .about {
+   padding: 5rem 5%;
+   background-color: var(--darker-bg);
+   position: relative;
+ }
+
+ .about::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 5px;
+   background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
+ }
+
+ .section-title {
+   font-size: 2.5rem;
+   margin-bottom: 3rem;
+   text-align: center;
+   position: relative;
+   display: inline-block;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+
+ .section-title::after {
+   content: '';
+   position: absolute;
+   bottom: -10px;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
+   border-radius: 3px;
+ }
+
+ .about-content {
+   display: flex;
+   gap: 3rem;
+   align-items: center;
+ }
+
+ .about-text {
+   flex: 1;
+ }
+
+ .about-text p {
+   margin-bottom: 1.5rem;
+   line-height: 1.6;
+   color: #ccc;
+ }
+
+ .skills {
+   flex: 1;
+ }
+
+ .skill-item {
+   margin-bottom: 1.5rem;
+   width: 100%;
+ }
+
+ .skill-name {
+   display: flex;
+   gap: 20px;
+   justify-content: space-between;
+   margin-bottom: 0.5rem;
+   width: 100%;
+ }
+
+ .skill-bar {
+   height: 10px;
+   background-color: #333;
+   border-radius: 5px;
+   overflow: hidden;
+ }
+
+ .skill-progress {
+   height: 100%;
+   border-radius: 5px;
+   background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
+   width: 0;
+   transition: width 1.5s ease-out;
+ }
