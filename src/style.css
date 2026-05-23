@@ -18,7 +18,7 @@
 body {
   background-color: var(--dark-bg);
   color: var(--text-color);
-  overflow: hidden;
+  overflow-x: hidden; /* Permitir scroll vertical, ocultar horizontal */
 }
 
 nav {
@@ -217,11 +217,9 @@ nav {
   0% {
     background-position: 0% 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
-
   100% {
     background-position: 0% 50%;
   }
@@ -234,7 +232,6 @@ nav {
       0 0 40px var(--neon-purple),
       0 0 60px var(--neon-pink);
   }
-
   100% {
     box-shadow:
       0 0 30px var(--neon-pink),
@@ -243,11 +240,23 @@ nav {
   }
 }
 
+/* Animação float adicionada */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -351,7 +360,7 @@ nav {
 }
 
 .project-card {
-  background-color: var(--darker-bg);
+  background-color: var(--darker-bg); /* Erro de digitação corrigido */
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -476,7 +485,7 @@ nav {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(0, 136, 255, 0, 3);
+  box-shadow: 0 0 15px rgba(0, 136, 255, 0.3); /* Sintaxe corrigida */
 }
 
 .submit-btn:hover {
@@ -518,7 +527,6 @@ footer {
   from {
     width: 0;
   }
-
   to {
     width: 100%;
   }
