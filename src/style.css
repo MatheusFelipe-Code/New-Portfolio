@@ -360,7 +360,7 @@ nav {
 }
 
 .project-card {
-  background-color: var(--darker-bg); /* Erro de digitação corrigido */
+  background-color: var(--darker-bg); 
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
