@@ -15,7 +15,7 @@
 
 ## 🚀 Sobre Mim
 
-Sou estudante de **Análise e Desenvolvimento de Sistemas (ADS)**, com formatura prevista para meados de 2026, e resido em Pernambuco (atuando na região de Garanhuns e Recife). Tenho construído minha base profissional através de experiências como instrutor de tecnologia e estágios focados em suporte de TI.
+Sou estudante de **Análise e Desenvolvimento de Sistemas (ADS)**, com formatura prevista para meados de 2026, e resido em Pernambuco (atuando na região de Paulista e Recife). Tenho construído minha base profissional através de experiências como instrutor de tecnologia e estágios focados em suporte de TI.
 
 Atualmente, meu principal objetivo é ingressar na minha **primeira oportunidade de estágio em programação/desenvolvimento**, aplicando conhecimentos práticos adquiridos na construção de softwares reais. Sou apaixonado por resolver problemas e transito entre o **Desenvolvimento Full-Stack**, o ecossistema **Salesforce** e a **Cibersegurança**.
 
